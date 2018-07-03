@@ -16,4 +16,4 @@ window.addEventListener( 'resize', function(){
     document.getElementById( 'window' ).innerHTML = 'Wow, this window is changing!';
 });
 
-// Displays time and date after listening for double button click
+// Displays text after listening for window resize
