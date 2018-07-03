@@ -1,13 +1,18 @@
-var formSubmit = document.getElementsByTagName( 'form' );
+var btn = document.getElementById( 'button' );
 
-var firstName = document.getElementById( 'firstname' );
-var lastName = document.getElementById( 'lastname' );
-var email = document.getElementById( 'email' );
-var message = document.getElementById( 'message' );
+btn.addEventListener( 'click', function() {
+  document.body.style.backgroundColor = "#FA824C";
+});
 
-formSubmit[0].addEventListener( 'submit' , function() {
-  console.log( 'The firstName is: ' + firstName.value );
-  console.log( 'The lastName is: ' + lastName.value );
-  console.log( 'The email is: ' + email.value );
-  console.log( 'The message is: ' + message.value );
+// Changes background color to coral after listening for button click
+
+// document.getElementsByTagName('h2').addEventListener('mouseenter', function() {
+//   document.getElementById('date').innerHTML = Date();
+// });
+
+var heading = document.getElementById('h2');
+var time = new Date();
+
+heading.addEventListener( 'mouseover', function() {
+  document.getElementById( 'date' ).innerHTML = n + ' ' + time;
 });
