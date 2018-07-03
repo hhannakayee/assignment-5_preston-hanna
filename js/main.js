@@ -6,13 +6,14 @@ btn.addEventListener( 'click', function() {
 
 // Changes background color to coral after listening for button click
 
-// document.getElementsByTagName('h2').addEventListener('mouseenter', function() {
-//   document.getElementById('date').innerHTML = Date();
-// });
-
-var heading = document.getElementById('h2');
-var time = new Date();
-
-heading.addEventListener( 'mouseover', function() {
-  document.getElementById( 'date' ).innerHTML = n + ' ' + time;
+document.getElementById( 'datebutton' ).addEventListener('dblclick', function() {
+  document.getElementById('date').innerHTML = Date();
 });
+
+// Displays time and date after listening for double button click
+
+window.addEventListener( 'resize', function(){
+    document.getElementById( 'window' ).innerHTML = 'Wow, this window is changing!';
+});
+
+// Displays time and date after listening for double button click
